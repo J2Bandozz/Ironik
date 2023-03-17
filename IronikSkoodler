@@ -197,13 +197,13 @@ end)
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
 local ESP = loadstring(game:HttpGet("https://kiriot22.com/releases/ESP.lua"))()
 local Window = Rayfield:CreateWindow({
-   Name = "Ironik.OP Free",
-   LoadingTitle = "Ironik.OP Free",
+   Name = "Ironik Test1",
+   LoadingTitle = "Ironik Test1",
    LoadingSubtitle = "By Narco",
    ConfigurationSaving = {
       Enabled = true,
-      FolderName = "Ironik.OP Free Test1", -- Create a custom folder for your hub/game
-      FileName = "Ironik.OP Free Configss"
+      FolderName = "Ironik Test1", -- Create a custom folder for your hub/game
+      FileName = "Ironik Test Configss"
    },
    Discord = {
       Enabled = true,
