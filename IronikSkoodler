@@ -197,13 +197,13 @@ end)
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
 local ESP = loadstring(game:HttpGet("https://kiriot22.com/releases/ESP.lua"))()
 local Window = Rayfield:CreateWindow({
-   Name = "Ironik Test1",
-   LoadingTitle = "Ironik Test1",
+   Name = "Ironik",
+   LoadingTitle = "Ironik",
    LoadingSubtitle = "By Narco",
    ConfigurationSaving = {
       Enabled = true,
-      FolderName = "Ironik Test1", -- Create a custom folder for your hub/game
-      FileName = "Ironik Test Configss"
+      FolderName = "Ironik", -- Create a custom folder for your hub/game
+      FileName = "Ironik Configss"
    },
    Discord = {
       Enabled = true,
@@ -1867,11 +1867,11 @@ local Section = hi:CreateSection("UI Settings")
 local Button = hi:CreateButton({
    Name = "Destroy UI",
    Callback = function()
-       Rayfield:Destroy()
+       Ironik:Destroy()
    end,
 })
 
-local Button = hi:CreateButton({
+local Press = hi:CreateButton({
    Name = "Save Configs",
    Callback = function()
        game.StarterGui:SetCore("SendNotification", {
