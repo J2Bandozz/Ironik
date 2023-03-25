@@ -824,6 +824,14 @@ local Toggle = LP:CreateToggle({
 	end    
 })
 
+task.spawn(function()
+    game:GetService("UserInputService").JumpRequest:Connect(function()
+        if infjumptoggle then
+            game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+        end
+    end)
+end)
+
 _G.JumpPower = false
 local Toggle = LP:CreateToggle({
     Name = "Custom JumpPower",
