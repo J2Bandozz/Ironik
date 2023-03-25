@@ -815,8 +815,8 @@ task.spawn(function()
     end)
 end)
 
-getgenv().infjumptoggle = false
-LocalPlayerTab:AddToggle({
+_G.infjumptoggle = false
+local Toggle = LP:CreateToggle({
 	Name = "Infinite Jump",
 	Default = false,
 	Callback = function(Value)
